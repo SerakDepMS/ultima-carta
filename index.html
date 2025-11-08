@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Con todo mi amor y respeto</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="floating-hearts" id="hearts-container"></div>
+    <div class="rose-petals" id="petals-container"></div>
+
+    <div class="container">
+      <div class="header">
+        <h1>Con todo mi amor y respeto <span class="heart">❤</span></h1>
+        <p>Esta página es mi última carta para ti</p>
+      </div>
+
+      <div class="music-section">
+        <h2><i class="fas fa-music"></i> Nuestra última canción</h2>
+        <p>Esta melodía siempre nos recordará lo que fuimos</p>
+        <div class="music-player">
+          <div class="album-cover">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="song-info">
+            <h3 id="song-title">Canción de Despedida</h3>
+            <p id="song-artist">Artista Favorito</p>
+          </div>
+          <div class="player-controls">
+            <button
+              id="play-btn"
+              title="Reproducir música"
+              aria-label="Reproducir música"
+            >
+              <i class="fas fa-play"></i>
+            </button>
+            <button
+              id="mute-btn"
+              title="Activar/Desactivar sonido"
+              aria-label="Activar/Desactivar sonido"
+            >
+              <i class="fas fa-volume-up"></i>
+            </button>
+          </div>
+        </div>
+        <p class="music-note"><em>Escucha con el corazón!</em></p>
+      </div>
+
+      <div class="message-section">
+        <h2><i class="fas fa-heart-crack"></i> Mi Última Palabra</h2>
+        <div class="message-content">
+          <p>Mi amor,</p>
+          <p>
+            He reflexionado profundamente sobre tu decisión y, aunque duele más
+            de lo que puedo expresar, la respeto completamente. Entiendo que a
+            veces el amor significa saber cuándo soltar, cuándo dar espacio y
+            cuándo aceptar que el camino que soñamos juntos ha llegado a su fin.
+          </p>
+          <p>
+            Quiero que sepas que jamás seré una molestia en tu vida. Valoré cada
+            instante a tu lado, cada risa, cada mirada, cada susurro en la
+            oscuridad. Guardaré esos recuerdos en el lugar más especial de mi
+            corazón, donde vivirán para siempre.
+          </p>
+          <p>
+            Aunque nuestro tiempo juntos haya terminado, quiero que sepas algo
+            importante: en un rincón muy lejano de mi alma, en ese lugar secreto
+            donde guardo lo más preciado, seguiré amándote. No de una manera que
+            te ate o te moleste, sino con un amor silencioso que desea solo tu
+            felicidad, aunque esa felicidad ya no me incluya.
+          </p>
+          <p>
+            Eres una persona extraordinaria, y mereces toda la alegría que la
+            vida pueda ofrecerte. Te deseo amor, éxito y paz en todo lo que
+            emprendas.
+          </p>
+        </div>
+      </div>
+
+      <div class="promise-section">
+        <h2><i class="fas fa-hand-holding-heart"></i> Mis Promesas Finales</h2>
+        <div class="promises-container">
+          <div class="promise-card">
+            <div class="promise-icon">
+              <i class="fas fa-user-slash"></i>
+            </div>
+            <p>Respetaré tu espacio y tu decisión</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <p>Guardaré nuestro amor en mi corazón</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon">
+              <i class="fas fa-road"></i>
+            </div>
+            <p>Seguiré mi camino sin molestarte</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon">
+              <i class="fas fa-dove"></i>
+            </div>
+            <p>Te desearé paz y felicidad siempre</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="final-message">
+        <div class="message-bubble">
+          <p>Adiós, mi amor. Dondequiera que vayas, o lo que estes haciendo,</p>
+          <p>recuerda que en algún lugar del mundo hay alguien</p>
+          <p class="question">que te amó como nadie más lo hará jamás.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Con amor eterno y el mayor respeto - <span id="tu-nombre">Alex</span>
+      </p>
+    </footer>
+
+    <!-- Reemplaza con tu archivo MP3 -->
+    <audio id="love-song" loop>
+      <source
+        src="Lil Peep - right here (feat. Horse Head) (Official Audio) - Lil Peep.mp3"
+        type="audio/mp3"
+      />
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

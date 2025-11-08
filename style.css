@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Georgia", serif;
+}
+
+.header p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.heart {
+  color: #e84393;
+  font-size: 2.5rem;
+  animation: heartbeat 1.5s infinite;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.message-section {
+  margin-bottom: 40px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border-left: 5px solid #e84393;
+}
+
+.message-section h2 {
+  color: #e84393;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.message-section h2 i {
+  margin-right: 15px;
+}
+
+.message-content p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.photo-section {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.photo-placeholder {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.photo-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.photo-content i {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.photo-content p {
+  font-size: 1.2rem;
+}
+
+.memory-section {
+  margin: 40px 0;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.memory-section h2 {
+  color: #fdbb2d;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.memory-section h2 i {
+  margin-right: 15px;
+}
+
+.memories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.memory-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.memory-card:hover {
+  transform: translateY(-5px);
+}
+
+.memory-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #fdbb2d, #b21f1f);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.memory-card p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.music-section {
+  text-align: center;
+  margin: 40px 0;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.music-section h2 {
+  color: #1a2a6c;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.music-player {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.album-cover {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.8rem;
+  margin-right: 15px;
+}
+
+.song-info {
+  flex: 1;
+  text-align: left;
+}
+
+.song-info h3 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.song-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.player-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.player-controls button {
+  background: #1a2a6c;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.player-controls button:hover {
+  background: #0d1a4d;
+  transform: scale(1.05);
+}
+
+#mute-btn {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#mute-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.music-note {
+  margin-top: 15px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.final-message {
+  text-align: center;
+  margin: 40px 0;
+  padding: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(232, 67, 147, 0.1);
+  border-radius: 20px;
+  border: 2px dotted rgba(232, 67, 147, 0.5);
+}
+
+.promise-section {
+  margin: 40px 0;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border-left: 5px solid #1a2a6c;
+}
+
+.promise-section h2 {
+  color: #1a2a6c;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.promise-section h2 i {
+  margin-right: 15px;
+}
+
+.promises-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.promise-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.promise-card:hover {
+  transform: translateY(-5px);
+}
+
+.promise-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #1a2a6c, #0d1a4d);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.promise-card p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+}
+
+/* Elementos flotantes */
+.floating-hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.heart-particle {
+  position: absolute;
+  font-size: 20px;
+  color: rgba(232, 67, 147, 0.5);
+  animation: float 15s infinite linear;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.rose-petals {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.petal {
+  position: absolute;
+  font-size: 20px;
+  color: rgba(232, 67, 147, 0.5);
+  animation: fall 12s infinite linear;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .photo-placeholder {
+    width: 200px;
+    height: 200px;
+  }
+
+  .memories-container,
+  .promises-container {
+    grid-template-columns: 1fr;
+  }
+
+  .music-player {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .album-cover {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .song-info {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .photo-placeholder {
+    width: 180px;
+    height: 180px;
+  }
+
+  .message-section,
+  .promise-section,
+  .music-section {
+    padding: 20px;
+  }
+}
